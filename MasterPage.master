@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server"> <!--Head-->
+  <title></title>
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-state=1" />
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    
+    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+   <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    
+    <script src="bootstrap-3.3.6-dist/js/jquery.js"></script>
+    <link href="MasterPageDesign.css" rel="stylesheet" />
+    </head>   <!--End of Head-->
+
+<body  style="background-image: url('images%20used/bo2 (2).jpg'); background-repeat: repeat;">
+    <form id="form1" runat="server">
+    <header style="background-color: #426CCA;"> 
+    <div class="container"> <!--Top Container-->
+      <div class="row" > <!--End of Top Rows-->
+        <div class="col-md-12" align="center"> <!--LOGO-->
+          <div class="top-container">
+                <!--<a href="#" class="logo" title="Home">-->
+                      <img src="logo.jpg" alt="" height="200" width="200" style="margin-top:10px; padding-left:16px;" class="img-responsive"/>
+                 
+      		</div>
+         </div> <!--End of LOGO-->
+           <div style="margin:10px" class="col-md-12" align="center"> <!--Name-->
+           <div class="top-container">
+         <b style="font-family: 'Eras Demi ITC'; font-size: 50px; color:White;">G</b>
+         <b style="font-family: 'Eras Demi ITC'; font-size: 30px; color:White;">algotia's</b> 
+         <b style="font-family: 'Eras Demi ITC'; font-size: 50px; color:White;"> U</b> 
+         <b style="font-family: 'Eras Demi ITC'; font-size: 30px; color:White;">niversity</b>
+         <b style="font-family: 'Eras Demi ITC'; font-size: 30px; color:White;">of</b>
+         <b style="font-family: 'Eras Demi ITC'; font-size: 50px; color:White;"> S</b>     
+         <b style="font-family: 'Eras Demi ITC'; font-size: 30px; color:White;">cience</b>    
+         <b style="font-family: 'Eras Demi ITC'; font-size: 50px; color:White;"> &</b>    
+         <b style="font-family: 'Eras Demi ITC'; font-size: 50px; color:White;"> T</b>    
+         <b style="font-family: 'Eras Demi ITC'; font-size: 30px; color:White;">echnology</b><br />
+         <img src="images%20used/line01.jpg" style="width:490px;" class="img-responsive" /><br />
+         <b style=" color:White; font-family: Calibri;">Approved by AICTE and Affiliated Constituent Institute of Pacific Universitiy, Udaipur</b>
+         </div>
+          </div> <!--End of Name-->
+          </div> <!--End of Top Rows-->
+          </div> <!--End of Top Container-->
+      
+ </header>
+       
+        
+          <!--  <button class="btn btn-info" data-toggle="collapse" data-target="#check">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>-->
+            <div  id="nav" class="container"><!--Nav Container--> 
+            <ul> <!--Menu-->
+                        <li><a href="Home.aspx" id="h"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                        <li><a href="MyPortal.aspx" id="portal"  data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>&nbsp;My Portal</a></li>
+                        <li><a href="#" id="reg"><span class="glyphicon glyphicon-registration-mark"></span>&nbsp;Register&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+                            <ul>
+                                 <li><a href="StudentRegistration.aspx">Student Register</a></li>
+                                 <!--<li><a href="FacultyRegistration.aspx">Faculty Register</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a href="#" id="login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+                            <ul>
+                                 <li><a href="StudentLogin.aspx">Student Login</a></li>
+                                 <li><a href="FacultyLogin.aspx">Faculty Login</a></li>
+                                 <li><a href="AdminLogin.aspx">Admin Login</a></li>
+                             </ul>
+                        </li>
+                        <li><a href="ContactUs.aspx"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+                        </ul> <!--End of Menu-->
+         </div><!--End of Nav Container-->
+        
+        <div class="row" style="margin:auto; text-align:center"><!--Content Area-->
+        <div class="col-lg-12" style="margin:auto">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        </div><br /><br/><br /> <!--End of Content Area-->
+
+        <div class="container-fluid navbar-default"><!--Footer-->
+            <div class="row"> <!--Footer Rows-->
+                <div class="col-sm-4" style="text-align:center">
+                    <h4 >ABOUT US</h4>         
+                    <p style="text-align:justify; font-weight: lighter;">
+                     
+                    </p> 
+                </div>
+                <div class="col-sm-4" style="text-align:center">
+                   <h4>CONTACT US</h4>
+                    <p style="text-align:center; font-weight: lighter;">Gr. Noida<br/>
+                      Knowledge Park - 2 <br/>
+                     <br /></p>
+                    <p><span class="glyphicon glyphicon-earphone"></span>+91 999887771<br/></p>
+                    <p><span class="glyphicon glyphicon-earphone"></span>+91 999887771<br/></p>
+                    <a href="#">director@galgotiasuniversity.edu.in</a><br/>
+                </div>
+                <div class="col-sm-4" style="text-align:center">
+                    <h4>Map</h4>
+                   
+                </div>
+                </div> <!--End of Footer Rows-->
+            <div class="container-fluid" style="text-align:center"><!--Copyright-->
+              <div class="copyright" style="margin:auto">
+              &copy; 2016 .  All Rights Reserved. Designed & powered by <a href="#">CS/IT Department</a>
+               </div>
+            </div><!--End of Copyright-->
+
+        </div><!--End of Footer-->
+        <a href="#" class="back-to-top"><span class="glyphicon glyphicon-triangle-top" style="right: 0px; top: 1px; height: 50px; width: 68px"></span></a>
+
+
+   </form>
+</body>
+</html>

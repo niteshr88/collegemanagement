@@ -1,0 +1,85 @@
+﻿
+ body /*Whole Body Setting*/
+       {             
+          font-family: 'Open Sans', sans-serif;
+	      font-size: 13px;
+	      line-height: 23px;
+          color:#91979f;
+          background:#f7fcff;
+       }
+
+/* --------------------------------------------------------	*/
+/*  Navigation Bar  */
+/* --------------------------------------------------------	*/
+
+                     
+      #nav
+      {
+          margin:auto;
+       } 
+
+      #nav ul
+       {
+           align-content:center;
+           list-style-type:none;
+
+       }
+        
+       #nav ul li a /*Menu Color*/
+       {
+           border-radius:8px;
+           text-decoration:none;
+           color:white;
+           display:block;
+
+       }
+
+        #nav ul li /*Menu Setting*/
+       {
+           background-color: rgb(66, 146, 202);
+           border-radius:8px;
+           margin:2px;
+           float:left;
+           color:white;
+           width:200px;
+           height:50px;
+           line-height:50px;
+           text-align:center;
+           position:relative;
+       }
+
+        #nav ul li ul li a /*Sub menu Background Color*/
+        {
+            background-color:#426CCA;
+            color:yellow;
+            
+        }
+
+      
+        #nav ul li:hover /*menu hover color*/
+       {
+          background-color:#ff4b64; 
+          
+       }
+       
+        #nav ul ul /*Sub menu Display None*/
+        {
+          position:absolute;
+          display:none;
+        }
+
+        #nav ul li:hover > ul /*Sub menu Display When Hover*/
+        {
+          z-index:10;
+          display:block;
+        }
+
+        #nav ul li ul li:hover a/*Sub menu Colors When Hover*/
+        {
+          color:white;
+        }
+
+       .copyright{
+  background:#232933; 
+  padding:3px 0px;
+}
